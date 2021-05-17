@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	
 	<name>maven-web-application</name>
 
@@ -21,13 +21,24 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<!-- <sonar.host.url>http://13.232.5.182:9000/</sonar.host.url>
+		<sonar.host.url>http://15.207.16.91:9000/</sonar.host.url>
+		<sonar.login>3c01ae1e542654ee8bd9d46697ff2671f9c5d98f</sonar.login>
+		<!--
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password> -->
+		<sonar.password>admin</sonar.password>
+		-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Remote Repo Kamalesh</name>
+			<url>http://15.206.165.32:8081/repository/remote-repo/</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		
@@ -38,6 +49,7 @@
 		</dependency>
 		
 		<!-- test dependencies -->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -97,14 +109,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <name>kamalesh Releases Nexus Repository</name>
+	      <url>http://15.206.165.32:8081/repository/wallmart-release//</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
+	      <name>kamalesh Snapshot Nexus Repository </name>
+	      <url>http://15.206.165.32:8081/repository/wallmart-snapshot//</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
