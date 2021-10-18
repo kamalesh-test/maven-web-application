@@ -29,8 +29,8 @@
 		<repository>
 			<id>nexus</id>
 			<url>http://52.13.110.226:8081/repository/java-maven/</url>
-		</repositories>
-         </repository>
+		</repository>
+         </repositories>
 
 	<dependencies>
 		
