@@ -24,8 +24,13 @@ public class EmployeeService {
 		JSONObject js = new JSONObject();
 		js.put("Name", "Kamalesh");
 		js.put("Calling Name", "Kamalesh");
+<<<<<<< HEAD
 		js.put("DOB", "06-Aug-1996");
 		js.put("Hobbies", "Reading Technical Blogs,Teaching..");
+=======
+		js.put("DOB", "08-Nov-2011");
+		js.put("Hobbies", "Reading Technical Blogs,Teaching.");
+>>>>>>> 126a8d3091db5d6b6fb0262118c9e70f72cccf7c
 		js.put("Places he like", "His native place");
 
 		return js.toString();
